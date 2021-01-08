@@ -1,19 +1,10 @@
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
-    <!-- Navbar brand -->
-    <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
-    <!-- Collapsible content -->
-    <links>
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a  class="nav-link waves-light" mdbWavesEffect  [routerLink]="['/order']">Order</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
-            </li>
-        </ul>
-    </links>
-</mdb-navbar>
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+    
+    <a class="navbar-brand" href="#">
+        <img src="../../../assets/ftn-300x300.jpg" width="30" height="30" alt=""> Sales Management App
+    </a>
+
+    <a class="navbar-brand" id="currentDateNavbar"> {{ latest_date}}</a>
+    
+  </nav>
