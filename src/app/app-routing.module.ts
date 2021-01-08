@@ -7,8 +7,7 @@ import { OrderComponent } from './components/order/order.component';
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'order', component: OrderComponent}
+  {path: '', component: OrderComponent},
 
 ];
 
