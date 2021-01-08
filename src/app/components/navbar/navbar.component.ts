@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatePipe } from '@angular/common'
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  latest_date;
+
+  constructor(public datepipe: DatePipe) { 
+    
+    let date =this.datepipe.transform(new Date(), 'yyyy-MM-dd');
+    this.latest_date = date;
+  }
 
   ngOnInit(): void {
   }

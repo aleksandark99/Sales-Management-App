@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {RouterModule} from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-
+import { DatePipe } from '@angular/common'
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { HomeComponent } from './components/home/home.component';
     MDBBootstrapModule.forRoot()
      
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
