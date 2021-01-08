@@ -4,15 +4,22 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import {RouterModule} from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-     MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot()
+     
   ],
   providers: [],
   bootstrap: [AppComponent]
