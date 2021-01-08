@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {RouterModule} from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { OrderComponent } from './components/order/order.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
