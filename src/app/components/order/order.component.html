@@ -1,1 +1,43 @@
-<p>order works!</p>
+<div class="container pt-5">
+  <div class="row justify-content-sm-center pt-5">
+      <div class="col-sm-6 shadow round pb-3">
+        <h1 class="text-center pt-3 text-secondary">Create new Bussines Partner</h1>
+
+          <form [formGroup]="partnerForm">
+
+              <div class="form-group">
+                <label class="col-form-label">Company name:</label>
+                <input formControlName="name" type="text" class="form-control">
+                <small *ngIf="partnerForm.get('name').invalid && (partnerForm.get('name').dirty || partnerForm.get('name').touched)" class="text-danger">Name is Required</small>
+              </div>
+
+              <div class="form-group">
+                <label class="col-form-label">Address:</label>
+                <input formControlName="address" type="text" class="form-control">
+                <small *ngIf="partnerForm.get('address').invalid && (partnerForm.get('address').dirty || partnerForm.get('address').touched)" class="text-danger">Address is Required</small>
+              </div>
+
+              <div class="form-group">
+                <label class="col-form-label">Phone:</label>
+                <input formControlName="phone" type="text" class="form-control">
+                <small *ngIf="partnerForm.get('phone').invalid && (partnerForm.get('phone').dirty || partnerForm.get('phone').touched)" class="text-danger">Phone is Required</small>
+              </div>
+
+              <div class="form-group">
+                <label class="col-form-label">Email:</label>
+                <input formControlName="email" type="text" class="form-control">
+                <small *ngIf="partnerForm.get('email').invalid && (partnerForm.get('email').dirty || partnerForm.get('email').touched)" class="text-danger">Email is Required</small>
+              </div>
+
+              <div class="form-group">
+                <label class="col-form-label">Tax number:</label>
+                <input formControlName="taxNo" type="text" class="form-control">
+                <small *ngIf="partnerForm.get('taxNo').invalid && (partnerForm.get('taxNo').dirty || partnerForm.get('taxNo').touched)" class="text-danger">Tax id number is Required</small>
+              </div>
+              
+
+              <button (click)="clicksub(partnerForm)" [disabled]="partnerForm.invalid" type="button" class="btn btn-primary">Add new partner</button>
+            </form>
+      </div>
+  </div>
+</div>

@@ -8,6 +8,8 @@ import {RouterModule} from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { OrderComponent } from './components/order/order.component';
 import { DatePipe } from '@angular/common'
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { DatePipe } from '@angular/common'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     MDBBootstrapModule.forRoot()
      
   ],
